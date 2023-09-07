@@ -25,7 +25,8 @@ name = prompt('Inserisci il tuo nome:');
 //3. Chiedi all'utente di inserire il numero di chilometri da percorrere.
 km = prompt('Inserisci I km che vuoi percorrere:');
 
-
+//Prendo l'elemento dove stamperò name
+document.getElementById('name').innerHTML = name;
 //console.log
 console.log('Nome:', name);
 console.log('Km:', km);
