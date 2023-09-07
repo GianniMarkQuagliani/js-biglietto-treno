@@ -39,9 +39,11 @@ age = parseInt(prompt('Inserisci la tua età:'));
 price = km * 0.21;
 
 
+if (age <= 18){
+    //7. Applichiamo uno sconto del 20% al prezzo base.
+    finalPrice = price - (price * 0.20);
 
-
-
+}
 
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
@@ -52,7 +54,7 @@ document.getElementById('km').innerHTML = km;
 //Prendo l'elemento dove stamperò age.
 document.getElementById('age').innerHTML = age;
 //Prendo l'elemento dove stamperò price.
-document.getElementById('price').innerHTML = price
+document.getElementById('price').innerHTML = price;
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 //console.log
