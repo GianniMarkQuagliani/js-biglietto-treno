@@ -21,5 +21,11 @@ Fine programma
 //1. Dichiaro tutte le mie variabili
 let name, km, age, price, finalPrice
 //2. Chiedi all'utente di inserire il proprio nome.
-name = prompt('Inserisci il tuo nome');
+name = prompt('Inserisci il tuo nome:');
+//3. Chiedi all'utente di inserire il numero di chilometri da percorrere.
+km = prompt('Inserisci I km che vuoi percorrere:');
+
+
+//console.log
 console.log('Nome:', name);
+console.log('Km:', km);
