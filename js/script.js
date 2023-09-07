@@ -45,10 +45,14 @@ price = km * 0.21;
 
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
-//Prendo l'elemento dove stamperò name
+//Prendo l'elemento dove stamperò name.
 document.getElementById('name').innerHTML = name;
-//Prendo l'elemento dove stamperò km
+//Prendo l'elemento dove stamperò km.
 document.getElementById('km').innerHTML = km;
+//Prendo l'elemento dove stamperò age.
+document.getElementById('age').innerHTML = age;
+//Prendo l'elemento dove stamperò price.
+document.getElementById('price').innerHTML = price
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 //console.log
