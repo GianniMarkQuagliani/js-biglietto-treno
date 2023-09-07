@@ -38,8 +38,8 @@ age = parseInt(prompt('Inserisci la tua età:'));
 //Calcola il prezzo del biglietto basato sulla distanza in chilometri.
 price = km * 0.21;
 
-//uno sconto del 20% per i minorenni
-if (age <= 17){
+//Sconto del 20% per i minorenni
+if (age <= 18){
     //7. Applichiamo uno sconto del 20% al prezzo base.
     finalPrice = price - (price * 0.20);
     //Prendo l'elemento dove stamperò il prezzo scontato.
@@ -49,6 +49,16 @@ if (age <= 17){
     document.getElementById('finalPrice').innerHTML = price.toFixed(2);
 }
 
+//Sconto del 40% per gli over 65.
+if (age <= 65){
+    //7. Applichiamo uno sconto del 40% al prezzo base.
+    finalPrice = price - (price * 0.40);
+    //Prendo l'elemento dove stamperò il prezzo scontato.
+    document.getElementById('finalPrice').innerHTML = finalPrice.toFixed(2);    
+}else{
+    //Se non è applicato alcuno sconto, visualizziamo il prezzo base
+    document.getElementById('finalPrice').innerHTML = price.toFixed(2);
+}
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 //Prendo l'elemento dove stamperò name.
@@ -58,7 +68,7 @@ document.getElementById('km').innerHTML = km;
 //Prendo l'elemento dove stamperò age.
 document.getElementById('age').innerHTML = age;
 //Prendo l'elemento dove stamperò price.
-document.getElementById('price').innerHTML = price;
+document.getElementById('price').innerHTML = price.toFixed(2);
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 //console.log
