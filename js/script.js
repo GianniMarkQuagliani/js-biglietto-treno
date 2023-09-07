@@ -17,3 +17,6 @@ Inizio del programma
 
 Fine programma
 */
+
+//1. Dichiaro tutte le mie variabili
+let name, km, age, price, finalPrice
