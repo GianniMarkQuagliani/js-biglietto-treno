@@ -20,3 +20,6 @@ Fine programma
 
 //1. Dichiaro tutte le mie variabili
 let name, km, age, price, finalPrice
+//2. Chiedi all'utente di inserire il proprio nome.
+name = prompt('Inserisci il tuo nome');
+console.log('Nome:', name);
