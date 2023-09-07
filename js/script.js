@@ -38,15 +38,15 @@ age = parseInt(prompt('Inserisci la tua età:'));
 //Calcola il prezzo del biglietto basato sulla distanza in chilometri.
 price = km * 0.21;
 
-
-if (age <= 18){
+//uno sconto del 20% per i minorenni
+if (age <= 17){
     //7. Applichiamo uno sconto del 20% al prezzo base.
     finalPrice = price - (price * 0.20);
-    //11. Dobbiamo formattere il prezzo finale con massimo di due decimali.
-    console.log(finalPrice.toFixed(2));
     //Prendo l'elemento dove stamperò il prezzo scontato.
-    document.getElementById('finalPrice').innerHTML = finalPrice.toFixed(2);
-    
+    document.getElementById('finalPrice').innerHTML = finalPrice.toFixed(2);    
+}else{
+    //Se non è applicato alcuno sconto, visualizziamo il prezzo base
+    document.getElementById('finalPrice').innerHTML = price.toFixed(2);
 }
 
 
