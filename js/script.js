@@ -59,8 +59,13 @@ document.getElementById('km').innerHTML = km;
 document.getElementById('age').innerHTML = age;
 //Prendo l'elemento dove stamperò price.
 document.getElementById('price').innerHTML = price.toFixed(2);
+//Prendo l'elemento dove stamperò price.
+document.getElementById('finalPrice').innerHTML = finalPrice.toFixed(2);
 
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 //console.log
 console.log('Nome:', name);
 console.log('Km:', km);
+console.log('Age:', age);
+console.log('Price:', price);
+console.log('Final Price:', finalPrice);
